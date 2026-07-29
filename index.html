@@ -1,234 +1,510 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pesquisa de Mercado</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<header>
-<h1>Pesquisa de Mercado</h1>
-</header>
-<main>
-    <h2>Estamos cultivando uma nova ideia. 🌸</h2>
-    <p>Antes de lançar um clube de assinatura de flores, queremos entender o que realmente importa para você. Leva só alguns minutos e sua opinião pode ajudar a moldar esse serviço.</p>
-    <form id="pesquisa-form">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pesquisa de Mercado</title>
+    </head>
+    <body>
+        <header>
+            <h1>Pesquisa de Mercado - Arquivo base de exemplo para validação</h1>
+        </header>
 
-        <fieldset id="grupo-perfil">
-            <legend>Perfil</legend>
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required>
+        <main>
+            <h2>Sua opinião faz florescer novas ideias</h2>
+            <p>Estamos realizando uma pesquisa para entender melhor os hábitos e preferências de consumidores em relação à compra de flores e plantas. Sua participação leva apenas alguns minutos e ajudará no desenvolvimento de um novo serviço de assinatura de flores</p>
 
-            <br>
-            <p id="faixa-label">Faixa etária</p>
-            <div role="group" aria-labelledby="faixa-label">
-                <label><input type="radio" id="faixa-menor18" name="faixa" value="Menos de 18">Menos de 18</label>
-                <label><input type="radio" id="faixa-18-24" name="faixa" value="18-24">18 a 24</label>
-                <label><input type="radio" id="faixa-25-34" name="faixa" value="25-34">25 a 34</label>
-                <label><input type="radio" id="faixa-35-44" name="faixa" value="35-44">35 a 44</label>
-                <label><input type="radio" id="faixa-45-54" name="faixa" value="45-54">45 a 54</label>
-                <label><input type="radio" id="faixa-55mais" name="faixa" value="55+">55 ou mais</label>
-            </div>
+            <form id="pesquisa-form">
 
-            <br>
-            <label for="cidade">Cidade</label>
-            <input type="text" id="cidade" name="cidade">
+                <fieldset id="grupo-perfil">
+                    <legend>Perfil</legend>
 
-            <br>
-            <label for="estado">Estado</label>
-            <select id="estado" name="estado">
-                <option></option>
-                <option value="ac">AC</option>
-                <option value="al">AL</option>
-                <option value="ap">AP</option>
-                <option value="am">AM</option>
-                <option value="ba">BA</option>
-                <option value="ce">CE</option>
-                <option value="df">DF</option>
-                <option value="es">ES</option>
-                <option value="go">GO</option>
-                <option value="ma">MA</option>
-                <option value="mt">MT</option>
-                <option value="ms">MS</option>
-                <option value="mg">MG</option>
-                <option value="pa">PA</option>
-                <option value="pb">PB</option>
-                <option value="pr">PR</option>
-                <option value="pe">PE</option>
-                <option value="pi">PI</option>
-                <option value="rj">RJ</option>
-                <option value="rn">RN</option>
-                <option value="rs">RS</option>
-                <option value="ro">RO</option>
-                <option value="rr">RR</option>
-                <option value="sc">SC</option>
-                <option value="sp">SP</option>
-                <option value="se">SE</option>
-                <option value="to">TO</option>
-            </select>
-            <br><br>
+                    <label>
+                        Nome
+                        <input type="text" id="nome" name="nome">
+                    </label>
+                    <br>
+                    <label>
+                        E-mail
+                        <input type="email" id="email" name="email">
+                    </label>
 
-            <p id="moradia-label">Tipo de moradia</p>
-            <div role="group" aria-labelledby="moradia-label">
-                <label><input type="radio" id="moradia-casa" name="moradia" value="Casa">Casa</label>
-                <label><input type="radio" id="moradia-apartamento" name="moradia" value="Apartamento">Apartamento</label>
-                <label><input type="radio" id="moradia-condominio" name="moradia" value="Condomínio">Condomínio</label>
-                <label><input type="radio" id="moradia-outro" name="moradia" value="Outro">Outro</label>
-            </div>
-        </fieldset>
+                    <br>
+                    <label>Faixa etária</label>
+                    <br>
+                    <label>
+                        <input type="radio" id="faixa-menor18" name="faixa" value="Menos de 18">
+                        Menos de 18
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="faixa-18-24" name="faixa" value="18-24">
+                        18 a 24
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="faixa-25-34" name="faixa" value="25-34">
+                        25 a 34
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="faixa-35-44" name="faixa" value="35-44">
+                        35 a 44
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="faixa-45-54" name="faixa" value="45-54">
+                        45 a 54
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="faixa-55mais" name="faixa" value="55+">
+                        55 ou mais
+                    </label>
 
-        <fieldset id="grupo-relacao">
-            <legend>Relação com Flores e Plantas</legend>
-            <p id="freq-label">Frequência de compra</p>
-            <div role="group" aria-labelledby="freq-label">
-                <label><input type="radio" id="freq-nunca" name="freq" value="Nunca">Nunca</label>
-                <label><input type="radio" id="freq-raramente" name="freq" value="Raramente">Raramente</label>
-                <label><input type="radio" id="freq-algumas-vezes-ano" name="freq" value="Algumas vezes por ano">Algumas vezes por ano</label>
-                <label><input type="radio" id="freq-mensalmente" name="freq" value="Mensalmente">Mensalmente</label>
-                <label><input type="radio" id="freq-quinzenalmente" name="freq" value="Quinzenalmente">Quinzenalmente</label>
-                <label><input type="radio" id="freq-semanalmente" name="freq" value="Semanalmente">Semanalmente</label>
-            </div>
-            <br>
-            <p id="local-compra-label">Onde costuma comprar?</p>
-            <div role="group" aria-labelledby="local-compra-label">
-                <label><input type="checkbox" id="local-floriculturas" name="local_compra" value="Floriculturas">Floriculturas</label>
-                <label><input type="checkbox" id="local-supermercados" name="local_compra" value="Supermercados">Supermercados</label>
-                <label><input type="checkbox" id="local-feiras" name="local_compra" value="Feiras">Feiras</label>
-                <label><input type="checkbox" id="local-garden-centers" name="local_compra" value="Garden Centers">Garden Centers</label>
-                <label><input type="checkbox" id="local-internet" name="local_compra" value="Internet">Internet</label>
-                <label><input type="checkbox" id="local-redes-sociais" name="local_compra" value="Redes sociais">Redes sociais</label>
-                <label><input type="checkbox" id="local-outro" name="local_compra" value="Outro">Outro</label>
-            </div>
+                    <br>
+                    <label>
+                        Cidade
+                        <input type="text" id="cidade" name="cidade" required>
+                    </label>
+                    <label>
+                        Estado
+                        <select id="estado" name="estado" required>
+                            <option></option>
+                            <option value="ac">AC</option>
+                            <option value="al">AL</option>
+                            <option value="ap">AP</option>
+                            <option value="am">AM</option>
+                            <option value="ba">BA</option>
+                            <option value="ce">CE</option>
+                            <option value="df">DF</option>
+                            <option value="es">ES</option>
+                            <option value="go">GO</option>
+                            <option value="ma">MA</option>
+                            <option value="mt">MT</option>
+                            <option value="ms">MS</option>
+                            <option value="mg">MG</option>
+                            <option value="pa">PA</option>
+                            <option value="pb">PB</option>
+                            <option value="pr">PR</option>
+                            <option value="pe">PE</option>
+                            <option value="pi">PI</option>
+                            <option value="rj">RJ</option>
+                            <option value="rn">RN</option>
+                            <option value="rs">RS</option>
+                            <option value="ro">RO</option>
+                            <option value="rr">RR</option>
+                            <option value="sc">SC</option>
+                            <option value="sp">SP</option>
+                            <option value="se">SE</option>
+                            <option value="to">TO</option>
+                        </select>
+                    </label>
+                    <br><br>
 
-            <br>
-            <p id="ocasioes-label">Para quais ocasiões costuma comprar?</p>
-            <div role="group" aria-labelledby="ocasioes-label">
-                <label><input type="checkbox" name="ocasioes" value="presente">Presente</label>
-                <label><input type="checkbox" name="ocasioes" value="decoracao">Decoração</label>
-                <label><input type="checkbox" name="ocasioes" value="datas comemorativas">Datas comemorativas</label>
-                <label><input type="checkbox" name="ocasioes" value="eventos">Eventos</label>
-                <label><input type="checkbox" name="ocasioes" value="uso pessoal">Uso pessoal</label>
-                <label><input type="checkbox" name="ocasioes" value="outro">Outro</label>
-            </div>
-        </fieldset>
+                    <label>Tipo de moradia</label>
+                    <br>
+                    <label>
+                        <input type="radio" id="moradia-casa" name="moradia" value="Casa">
+                        Casa
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="moradia-apartamento" name="moradia" value="Apartamento">
+                        Apartamento
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="moradia-condominio" name="moradia" value="Condomínio">
+                        Condomínio
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="moradia-outro" name="moradia" value="Outro">
+                        Outro
+                    </label>
+                </fieldset>
 
-        <fieldset id="grupo-preferencias">
-            <legend>Preferências</legend>
-            <label><input type="radio" id="pref-flores-naturais" name="pref" value="Flores naturais">Flores naturais</label>
-            <label><input type="radio" id="pref-plantas" name="pref" value="Plantas">Plantas</label>
-            <label><input type="radio" id="pref-ambos" name="pref" value="Ambos">Ambos</label>
-            <label for="flores-favoritas">Flores favoritas</label>
-            <input type="text" id="flores-favoritas" name="flores_favoritas">
-        </fieldset>
+                <fieldset id="grupo-relacao">
+                    <legend>Relação com Flores e Plantas</legend>
 
-        <fieldset id="grupo-assinatura">
-            <legend>Interesse na Assinatura</legend>
-            <p id="interesse-label">Você estaria interessado em uma assinatura de um clube de flores?</p>
-            <div role="group" aria-labelledby="interesse-label">
-                <label><input type="radio" id="interesse-sim" name="interesse" value="Sim">Sim</label>
-                <label><input type="radio" id="interesse-talvez" name="interesse" value="Talvez">Talvez</label>
-                <label><input type="radio" id="interesse-nao" name="interesse" value="Não">Não</label>
-            </div>
-            <br>
-            <p id="frequencia-label">Com que frequência gostaria de receber?</p>
-            <div role="group" aria-labelledby="frequencia-label">
-                <label><input type="radio" name="frequencia" value="semanalmente">Semanalmente</label>
-                <label><input type="radio" name="frequencia" value="quinzenalmente">Quinzenalmente</label>
-                <label><input type="radio" name="frequencia" value="mensalmente">Mensalmente</label>
-                <label><input type="radio" name="frequencia" value="apenas datas especiais">Apenas em datas especiais</label>
-            </div>
-            <br>
-            <p id="diferencial-label">O que mais te atrairia nesse serviço?</p>
-            <div role="group" aria-labelledby="diferencial-label">
-                <label><input type="checkbox" name="diferencial" value="praticidade">Praticidade</label>
-                <label><input type="checkbox" name="diferencial" value="economia">Economia</label>
-                <label><input type="checkbox" name="diferencial" value="curadoria especializada">Curadoria especializada</label>
-                <label><input type="checkbox" name="diferencial" value="flores diferentes em cada entrega">Flores diferentes em cada entrega</label>
-                <label><input type="checkbox" name="diferencial" value="entrega em casa">Entrega em casa</label>
-                <label><input type="checkbox" name="diferencial" value="flexibilidade">Flexibilidade</label>
-                <label><input type="checkbox" name="diferencial" value="outro">Outro</label>
-            </div>
-        </fieldset>
+                    <label>Frequência de compra</label>
+                    <br>
+                    <label>
+                        <input type="radio" id="freq-nunca" name="freq" value="Nunca">
+                        Nunca
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="freq-raramente" name="freq" value="Raramente">
+                        Raramente
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="freq-algumas-vezes-ano" name="freq" value="Algumas vezes por ano">
+                        Algumas vezes por ano
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="freq-mensalmente" name="freq" value="Mensalmente">
+                        Mensalmente
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="freq-quinzenalmente" name="freq" value="Quinzenalmente">
+                        Quinzenalmente
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="freq-semanalmente" name="freq" value="Semanalmente">
+                        Semanalmente
+                    </label>
 
-        <fieldset id="grupo-preco">
-            <legend>💰 Disposição a Pagar</legend>
-            <p id="preco-label">Qual o preço que estaria disposto a pagar por uma assinatura?</p>
-            <div role="group" aria-labelledby="preco-label">
-                <label><input type="radio" id="preco-ate-50" name="preco" value="Até R$50">Até R$50</label>
-                <label><input type="radio" id="preco-51-80" name="preco" value="R$51-80">R$51-80</label>
-                <label><input type="radio" id="preco-81-120" name="preco" value="R$81-120">R$81-120</label>
-                <label><input type="radio" id="preco-121-180" name="preco" value="R$121-180">R$121-180</label>
-                <label><input type="radio" id="preco-acima-180" name="preco" value="Acima de R$180">Acima de R$180</label>
-            </div>
-            <br>
-            <p id="modelo-plano-label">Qual modelo de plano você prefere?</p>
-            <div role="group" aria-labelledby="modelo-plano-label">
-                <label><input type="radio" name="modelo-plano" value="plano fixo mensal">Plano fixo mensal</label>
-                <label><input type="radio" name="modelo-plano" value="plano flexível">Plano flexível</label>
-                <label><input type="radio" name="modelo-plano" value="compra avulsa">Compra avulsa</label>
-                <label><input type="radio" name="modelo-plano" value="não sei">Não sei</label>
-            </div>
-        </fieldset>
+                    <br>
+                    <label>Onde costuma comprar?</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="local-floriculturas" name="local_compra" value="Floriculturas">
+                        Floriculturas
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="local-supermercados" name="local_compra" value="Supermercados">
+                        Supermercados
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="local-feiras" name="local_compra" value="Feiras">
+                        Feiras
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="local-garden-centers" name="local_compra" value="Garden Centers">
+                        Garden Centers
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="local-internet" name="local_compra" value="Internet">
+                        Internet
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="local-redes-sociais" name="local_compra" value="Redes sociais">
+                        Redes sociais
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="local-outro" name="local_compra" value="Outro">
+                        Outro
+                    </label>
 
-        <fieldset id="grupo-canais">
-            <legend> Comunicação e Entrega</legend>
-            <p id="canal-label">Canal preferido para contratar?</p>
-            <div role="group" aria-labelledby="canal-label">
-                <label><input type="radio" id="canal-site" name="canal" value="Site">Site</label>
-                <label><input type="radio" id="canal-whatsapp" name="canal" value="WhatsApp">WhatsApp</label>
-                <label><input type="radio" id="canal-aplicativo" name="canal" value="Aplicativo">Aplicativo</label>
-                <label><input type="radio" id="canal-loja-fisica" name="canal" value="Loja física">Loja física</label>
-                <label><input type="radio" id="canal-instagram" name="canal" value="Instagram">Instagram</label>
-            </div>
+                    <br>
+                    <label>Para quais ocasiões costuma comprar?</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ocasioes" value="presente">
+                        Presente
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ocasioes" value="decoracao">
+                        Decoração
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ocasioes" value="datas comemorativas">
+                        Datas comemorativas
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ocasioes" value="eventos">
+                        Eventos
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ocasioes" value="uso pessoal">
+                        Uso pessoal
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ocasioes" value="outro">
+                        Outro
+                    </label>
+                </fieldset>
 
-            <p id="entrega-label">Forma de recebimento</p>
-            <div role="group" aria-labelledby="entrega-label">
-                <label><input type="radio" name="forma-recebimento" value="entrega">Entrega em casa</label>
-                <label><input type="radio" name="forma-recebimento" value="retirada">Retirada na loja</label>
-            </div>
+                <fieldset id="grupo-preferencias">
+                    <legend>Preferências</legend>
 
-            <p id="horario-label">Qual o melhor período para receber?</p>
-            <div role="group" aria-labelledby="horario-label">
-                <label><input type="radio" name="horario" value="manha">Manhã</label>
-                <label><input type="radio" name="horario" value="tarde">Tarde</label>
-                <label><input type="radio" name="horario" value="noite">Noite</label>
-                <label><input type="radio" name="horario" value="indiferente">Indiferente</label>
-            </div>
-        </fieldset>
+                    <label>
+                        <input type="radio" id="pref-flores-naturais" name="pref" value="Flores naturais">
+                        Flores naturais
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="pref-plantas" name="pref" value="Plantas">
+                        Plantas
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="pref-ambos" name="pref" value="Ambos">
+                        Ambos
+                    </label>
+                    <br>
+                    <label>
+                        Flores favoritas
+                        <input type="text" id="flores-favoritas" name="flores_favoritas" required>
+                    </label>
+                </fieldset>
 
-        <fieldset id="grupo-avaliacao">
-            <legend>⭐ Avaliação Final</legend>
-            <div class="form-group">
-            <p id="nota-interesse-label">De 0 a 10, qual a chance de você assinar esse serviço se ele existisse hoje?</p>
-            <div role="group" aria-labelledby="nota-interesse-label">
-                <label><input type="radio" id="nota-interesse-0" name="nota_interesse" value="0">0</label>
-                <label><input type="radio" id="nota-interesse-1" name="nota_interesse" value="1">1</label>
-                <label><input type="radio" id="nota-interesse-2" name="nota_interesse" value="2">2</label>
-                <label><input type="radio" id="nota-interesse-3" name="nota_interesse" value="3">3</label>
-                <label><input type="radio" id="nota-interesse-4" name="nota_interesse" value="4">4</label>
-                <label><input type="radio" id="nota-interesse-5" name="nota_interesse" value="5">5</label>
-                <label><input type="radio" id="nota-interesse-6" name="nota_interesse" value="6">6</label>
-                <label><input type="radio" id="nota-interesse-7" name="nota_interesse" value="7">7</label>
-                <label><input type="radio" id="nota-interesse-8" name="nota_interesse" value="8">8</label>
-                <label><input type="radio" id="nota-interesse-9" name="nota_interesse" value="9">9</label>
-                <label><input type="radio" id="nota-interesse-10" name="nota_interesse" value="10">10</label>
-            </div>
-            </div>
+                <fieldset id="grupo-assinatura">
+                    <legend>Interesse na Assinatura</legend>
 
-            <label for="impeditivo">O que impediria de contratar esse serviço?</label>
-            <textarea id="impeditivo" name="impeditivo" rows="4"></textarea>
+                    <label>Você estaria interessado em uma assinatura de um clube de flores?</label>
+                    <br>
+                    <label>
+                        <input type="radio" id="interesse-sim" name="interesse" value="Sim">
+                        Sim
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="interesse-talvez" name="interesse" value="Talvez">
+                        Talvez
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="interesse-nao" name="interesse" value="Não">
+                        Não
+                    </label>
 
-            <p id="news-label">Deseja receber novidades?</p>
-            <div role="group" aria-labelledby="news-label">
-                <label><input type="radio" id="news-sim" name="news" value="Sim">Sim</label>
-                <label><input type="radio" id="news-nao" name="news" value="Não">Não</label>
-            </div>
-        </fieldset>
+                    <br>
+                    <label>Com que frequência gostaria de receber?</label>
+                    <br>
+                    <label>
+                        <input type="radio" name="frequencia" value="semanalmente">
+                        Semanalmente
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="frequencia" value="quinzenalmente">
+                        Quinzenalemente
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="frequencia" value="mensalmente">
+                        Mensalmente
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="frequencia" value="apenas datas especiais">
+                        Apenas em datas especiais
+                    </label>
 
-        <button type="submit" id="btn-enviar">Enviar</button>
-    </form>
-</main>
-</body></html>
+                    <br>
+                    <label>O que mais te atrairia nesse serviço?</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="diferencial" value="praticidade">
+                        Praticidade
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="diferencial" value="economia">
+                        Economia
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="diferencial" value="curadoria especializada">
+                        Curadoria especializada
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="diferencial" value="flores diferentes em cada entrega">
+                        Flores diferentes em cada entrega
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="diferencial" value="entrega em casa">
+                        Entrega em casa
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="diferencial" value="flexibilidade">
+                        Flexibilidade
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="diferencial" value="outro">
+                        Outro
+                    </label>
+                </fieldset>
+
+                <fieldset id="grupo-preco">
+                    <legend>💰 Disposição a Pagar</legend>
+
+                    <label>Qual o preço que estaria disposto a pagar por uma assinatura?</label>
+                    <br>
+                    <label>
+                        <input type="radio" id="preco-ate-50" name="preco" value="Até R$50">
+                        Até R$50
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="preco-51-80" name="preco" value="R$51-80">
+                        R$51-80
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="preco-81-120" name="preco" value="R$81-120">
+                        R$81-120
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="preco-121-180" name="preco" value="R$121-180">
+                        R$121-180
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="preco-acima-180" name="preco" value="Acima de R$180">
+                        Acima de R$180
+                    </label>
+
+                    <br>
+                    <label>Qual modelo de plano você prefere?</label>
+                    <br>
+                    <label>
+                        <input type="radio" name="modelo-plano" value="plano fixo mensal">
+                        Plano fixo mensal
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="modelo-plano" value="plano flexivel">
+                        Plano flexivel
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="modelo-plano" value="compra avulsa">
+                        Compra avulsa
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="modelo-plano" value="não sei ">
+                        Plano fixo mensal
+                    </label>
+                </fieldset>
+
+                <fieldset id="grupo-canais">
+                    <legend>Comunicação e Entrega</legend>
+
+                    <label>Canal preferido para contratar?</label>
+                    <br>
+                    <label>
+                        <input type="radio" id="canal-site" name="canal" value="Site">
+                        Site
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="canal-whatsapp" name="canal" value="WhatsApp">
+                        WhatsApp
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="canal-aplicativo" name="canal" value="Aplicativo">
+                        Aplicativo
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="canal-loja-fisica" name="canal" value="Loja física">
+                        Loja física
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="canal-instagram" name="canal" value="Instagram">
+                        Instagram
+                    </label>
+
+                    <br>
+                    <label>Forma de recebimento</label>
+                    <br>
+                    <label>
+                        <input type="radio" name="forma-recebimento" value="entrega">
+                        Entrega em casa
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="forma-recebimento" value="retirada">
+                        Retirada na loja
+                    </label>
+
+                    <br>
+                    <label>Qual a melhor período para receber?</label>
+                    <br>
+                    <label>
+                        <input type="radio" name="horario" value="manha">
+                        Manha
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="horario" value="tarde">
+                        Tarde
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="horario" value="noite">
+                        Noite
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="horario" value="indiferente">
+                        Indiferente
+                    </label>
+                </fieldset>
+
+                <fieldset id="grupo-avaliacao">
+                    <legend>⭐ Avaliação Final</legend>
+
+                    <div class="form-group">
+                        <label>De 0 a 10, qual a chance de você assinar esse serviço se ele existisse hoje?</label>
+
+                        <div>
+                            <label><input type="radio" id="nota-interesse-0" name="nota_interesse" value="0">0</label>
+                            <label><input type="radio" id="nota-interesse-1" name="nota_interesse" value="1">1</label>
+                            <label><input type="radio" id="nota-interesse-2" name="nota_interesse" value="2">2</label>
+                            <label><input type="radio" id="nota-interesse-3" name="nota_interesse" value="3">3</label>
+                            <label><input type="radio" id="nota-interesse-4" name="nota_interesse" value="4">4</label>
+                            <label><input type="radio" id="nota-interesse-5" name="nota_interesse" value="5">5</label>
+                            <label><input type="radio" id="nota-interesse-6" name="nota_interesse" value="6">6</label>
+                            <label><input type="radio" id="nota-interesse-7" name="nota_interesse" value="7">7</label>
+                            <label><input type="radio" id="nota-interesse-8" name="nota_interesse" value="8">8</label>
+                            <label><input type="radio" id="nota-interesse-9" name="nota_interesse" value="9">9</label>
+                            <label><input type="radio" id="nota-interesse-10" name="nota_interesse" value="10">10</label>
+                        </div>
+
+                        <label>
+                            O que impediria de contratar esse serviço?
+                            <br>
+                            <textarea id="impeditivo" name="impeditivo" rows="4" required></textarea>
+                        </label>
+
+                        <label>Deseja receber novidades?</label>
+                        <br>
+                        <label>
+                            <input type="radio" id="news-sim" name="news" value="Sim">
+                            Sim
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" id="news-nao" name="news" value="Não">
+                            Não
+                        </label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" id="btn-enviar">Enviar</button>
+            </form>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script src="supabase_config.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
