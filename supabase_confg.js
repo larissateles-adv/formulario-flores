@@ -1,4 +1,10 @@
-const supabase_url = 'https://droabquslsnmgiazqqsk.supabase.co' //url do banco 
-const supabase_key = 'sb_publishable_csZKUtyP88vQeg4wV7Lxsw_D9rACesy' //chave pública
+const supabase_url = 'https://droabquslsnmgiazqqsk.supabase.co';
+const supabase_key = 'sb_publishable_csZKUtyP88vQeg4wV7Lxsw_D9rACesy';
 
-const supabaseClient = supabase.createClient(supabase_url, supabase_key);
+const supabaseClient = typeof window.supabase !== 'undefined'
+    ? window.supabase.createClient(supabase_url, supabase_key)
+    : null;
+
+if (!supabaseClient) {
+    console.error('Não foi possível inicializar o Supabase. Verifique o carregamento do script da CDN.');
+}
