@@ -1,144 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;600&display=swap');
-
-
 :root{
-    /* aplicar as variaveis para toda a aplicação / todos os elementos */
-    --nome-variavel: rgb(30, 0, 255);
-    --cor-fundo : #d9f0df;
-    --cor-superficie : #ffffff;
-    --cor-titulo : #1f4d2e;
-    --cor-texto : #555555;
-    --cor-borda : #d9f0df;
-    --cor-destaque : #f4c430;
-    --cor-interacao : #f2994a;
-    --cor-texto-claro : #ffffff;
-    --cor-texto-botao : #1f4d2e;
+    --cor-fundo: #eef6ee;
+    --cor-superficie: #ffffff;
+    --cor-titulo: #234b35;
+    --cor-texto: #4e5a53;
+    --cor-borda: #d9e6dc;
+    --cor-destaque: #d7b36a;
+    --cor-interacao: #8a5d2d;
+    --cor-texto-claro: #ffffff;
+    --cor-texto-botao: #2d271d;
     --fonte: 'Poppins', sans-serif;
 }
 
 body{
-    background-color: var(--cor-fundo);
+    font-family: var(--fonte);
+    background: linear-gradient(135deg, #f7f2ea 0%, var(--cor-fundo) 100%);
+    color: var(--cor-texto);
 }
 
 header{
-    background-image: url('https://raw.githubusercontent.com/techcomkathia/formulario-flores/refs/heads/main/bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: linear-gradient(135deg, rgba(35, 75, 53, 0.95), rgba(85, 115, 97, 0.9));
     color: var(--cor-texto-claro);
     text-align: center;
-    padding: 20px 0;
+    padding: 48px 20px 40px;
+}
+
+.hero-copy{
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.eyebrow{
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    font-size: 0.74rem;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+header h1{
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+.hero-subtitle{
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.95;
 }
 
 main{
-    max-width: 700px;
-    margin: 20px auto;
-    padding: 20px;
+    max-width: 760px;
+    margin: -24px auto 32px;
+    padding: 26px 28px 30px;
     background-color: var(--cor-superficie);
-    border-radius: 10px;
+    border-radius: 18px;
+    box-shadow: 0 16px 40px rgba(19, 42, 30, 0.08);
 }
 
 h2{
     color: var(--cor-titulo);
     margin-bottom: 10px;
     text-align: center;
+    font-size: 1.35rem;
 }
 
 p{
-    margin-bottom: 20px;
-    line-height: 1.5;
+    margin-bottom: 18px;
+    line-height: 1.65;
     text-align: center;
 }
 
 form{
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid var(--cor-borda);
-    border-radius: 5px;
+    margin-top: 16px;
+    padding: 10px 2px 0;
 }
 
 fieldset{
     border: 1px solid var(--cor-borda);
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 20px;
     margin-bottom: 20px;
 }
 
 legend{
     color: var(--cor-titulo);
-    font-weight: bold;
-    padding: 10px;
+    font-weight: 600;
+    padding: 8px 12px;
     background-color: var(--cor-destaque);
-    border-radius: 10px;
-    width: 300px;
+    border-radius: 999px;
     text-align: center;
 }
 
 label{
-    margin-bottom: 5px;
+    display: block;
+    margin-bottom: 6px;
 }
 
 input,
 select,
 textarea{
-    padding: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cfd8d1;
+    border-radius: 8px;
     font-family: inherit;
-    margin: 5px;
+    margin: 6px 0;
+    background-color: #fcfdfc;
 }
 
 textarea{
-    width: 100%;
+    min-height: 100px;
 }
 
+input[type="radio"],
+input[type="checkbox"]{
+    width: auto;
+    margin-right: 6px;
+}
 
- /* Radios e Checkboxes */
+button{
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--cor-destaque), #e8c77f);
+    color: var(--cor-texto-botao);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-    input[type="radio"],
-    input[type="checkbox"]{
-        width: auto;
-        margin-right: 5px;
-    }
+button:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(138, 93, 45, 0.18);
+}
 
-    /* =========================
-       Botão
-    ========================= */
-    button{
-        width: 100%;
-        padding: 12px;
-        border: none;
-        border-radius: 5px;
-        background-color: var(--cor-destaque);
-        color: var(--cor-texto-botao);
-        font-size: 1rem;
-        font-weight: bold;
-        cursor: pointer;
-    }
+input:focus,
+select:focus,
+textarea:focus{
+    outline: none;
+    border-color: var(--cor-interacao);
+    box-shadow: 0 0 0 3px rgba(138, 93, 45, 0.12);
+}
 
-    button:hover{
-        background-color: var(--cor-interacao);
-        color: var(--cor-texto-claro);
-    }
+.mensagem-status{
+    min-height: 1.35rem;
+    margin: 10px 0 14px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--cor-titulo);
+}
 
-    input:focus,
-    select:focus,
-    textarea:focus{
-        outline: none;
-        border: 2px solid var(--cor-interacao);
-    }
+.mensagem-status.success{
+    color: #2f6d4b;
+}
 
+.mensagem-status.error{
+    color: #a53f2d;
+}
 
- @media (max-width: 600px){
-
+@media (max-width: 600px){
     main{
         margin: 10px;
-        padding: 15px;
+        padding: 16px;
     }
 
     input,
@@ -147,7 +181,6 @@ textarea{
     button{
         width: 100%;
     }
-
 }
 
 
