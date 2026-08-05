@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;600&display=swap');
+
+
+:root{
+    /* aplicar as variaveis para toda a aplicação / todos os elementos */
+    --nome-variavel: rgb(30, 0, 255);
+    --cor-fundo : #d9f0df;
+    --cor-superficie : #ffffff;
+    --cor-titulo : #1f4d2e;
+    --cor-texto : #555555;
+    --cor-borda : #d9f0df;
+    --cor-destaque : #f4c430;
+    --cor-interacao : #f2994a;
+    --cor-texto-claro : #ffffff;
+    --cor-texto-botao : #1f4d2e;
+    --fonte: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--cor-fundo);
+}
+
+header{
+    background-image: url('https://raw.githubusercontent.com/techcomkathia/formulario-flores/refs/heads/main/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--cor-texto-claro);
+    text-align: center;
+    padding: 20px 0;
+}
+
+main{
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--cor-superficie);
+    border-radius: 10px;
+}
+
+h2{
+    color: var(--cor-titulo);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+form{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 5px;
+}
+
+fieldset{
+    border: 1px solid var(--cor-borda);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend{
+    color: var(--cor-titulo);
+    font-weight: bold;
+    padding: 10px;
+    background-color: var(--cor-destaque);
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea{
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: inherit;
+    margin: 5px;
+}
+
+textarea{
+    width: 100%;
+}
+
+
+ /* Radios e Checkboxes */
+
+    input[type="radio"],
+    input[type="checkbox"]{
+        width: auto;
+        margin-right: 5px;
+    }
+
+    /* =========================
+       Botão
+    ========================= */
+    button{
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--cor-destaque);
+        color: var(--cor-texto-botao);
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: var(--cor-interacao);
+        color: var(--cor-texto-claro);
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus{
+        outline: none;
+        border: 2px solid var(--cor-interacao);
+    }
+
+
+ @media (max-width: 600px){
+
+    main{
+        margin: 10px;
+        padding: 15px;
+    }
+
+    input,
+    select,
+    textarea,
+    button{
+        width: 100%;
+    }
+
+}
+
+
